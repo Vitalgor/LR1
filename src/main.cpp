@@ -36,6 +36,7 @@ int main(int argc, char* argv[]){
         }
         LRParser parser = LRParser(grammar, grammar_symbols, start_symbol);
         parser.build_lr_table();
+        std::cout << "Table is ready!" << std::endl;
         std::string _;
         std::getline(std::cin, _);
         for (int i = 0; i < cnt; i++){
